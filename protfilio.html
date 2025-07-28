@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khalid Bensaid Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #000, #0a0f24);
+      color: #fff;
+      font-family: 'Orbitron', sans-serif;
+    }
+    .glass {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(12px);
+    }
+    .card {
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px) scale(1.03);
+      box-shadow: 0 8px 20px rgba(0, 150, 255, 0.4);
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full flex justify-between px-8 py-4 glass z-50">
+    <h1 class="text-2xl text-blue-400">khalid@skywalker</h1>
+    <ul class="flex gap-6 text-lg">
+      <li><a href="#home" class="hover:text-pink-400">Home</a></li>
+      <li><a href="#about" class="hover:text-green-400">About</a></li>
+      <li><a href="#tools" class="hover:text-yellow-400">Tools</a></li>
+      <li><a href="#contact" class="hover:text-purple-400">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="h-screen flex flex-col justify-center items-center text-center">
+    <h2 class="text-5xl font-bold text-blue-400">Khalid Bensaid</h2>
+    <p class="text-xl mt-4">Cybersecurity & Python Developer</p>
+    <div class="mt-6 flex gap-4">
+      <a href="#tools" class="px-6 py-3 bg-blue-500 rounded-xl hover:bg-blue-600">View Tools</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 px-10 bg-gradient-to-r from-gray-900 to-black">
+    <h3 class="text-3xl text-center text-blue-400 mb-10">About Me</h3>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="card p-6 bg-gray-800 rounded-xl">
+        <h4 class="text-xl mb-2 text-pink-400">Cybersecurity</h4>
+        <p>Penetration Testing, Ethical Hacking, Network Security.</p>
+      </div>
+      <div class="card p-6 bg-gray-800 rounded-xl">
+        <h4 class="text-xl mb-2 text-green-400">Python Dev</h4>
+        <p>Automation, Cyber Tools, Web Scraping, APIs.</p>
+      </div>
+      <div class="card p-6 bg-gray-800 rounded-xl">
+        <h4 class="text-xl mb-2 text-yellow-400">Web Dev</h4>
+        <p>HTML, CSS, JS, Interactive Websites & Dashboards.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tools Main Section -->
+  <section id="tools" class="py-20 px-10 bg-gray-950">
+    <h3 class="text-3xl text-center text-blue-400 mb-10">My Tools</h3>
+    <div class="grid md:grid-cols-3 gap-6">
+      <a href="#scanning" class="card p-6 bg-gray-900 rounded-xl text-center block hover:bg-gray-800">
+        <h4 class="text-xl mb-2 text-green-400">Scanning Tools</h4>
+        <p>Network and port scanning utilities.</p>
+      </a>
+      <a href="#frameworks" class="card p-6 bg-gray-900 rounded-xl text-center block hover:bg-gray-800">
+        <h4 class="text-xl mb-2 text-yellow-400">Framework Tools</h4>
+        <p>Exploit and automation frameworks.</p>
+      </a>
+      <a href="#malwarelab" class="card p-6 bg-gray-900 rounded-xl text-center block hover:bg-gray-800">
+        <h4 class="text-xl mb-2 text-red-400">Malware Lab</h4>
+        <p>Educational malware analysis environment.</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- Scanning Tools Page -->
+  <section id="scanning" class="py-20 px-10 bg-gradient-to-r from-black to-gray-900">
+    <h3 class="text-3xl text-center text-green-400 mb-10">Scanning Tools</h3>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="card p-6 bg-gray-900 rounded-xl">
+        <h4 class="text-xl mb-2 text-green-400">Email Spoof Checker</h4>
+        <p>A Python tool to detect email spoofing attempts.</p>
+        <a href="https://github.com/Khalidben344/email-spoof-checker" class="text-blue-400 underline mt-2 block">View on GitHub</a>
+      </div>
+      <div class="card p-6 bg-gray-900 rounded-xl">
+        <h4 class="text-xl mb-2 text-yellow-400">Network Scanner</h4>
+        <p>A Python-based tool to scan networks and discover devices.</p>
+        <a href="https://github.com/Khalidben344/network-scanner" class="text-blue-400 underline mt-2 block">View on GitHub</a>
+      </div>
+      <div class="card p-6 bg-gray-900 rounded-xl">
+        <h4 class="text-xl mb-2 text-purple-400">Port Scanner</h4>
+        <p>A simple Python port scanning tool for security testing.</p>
+        <a href="https://github.com/Khalidben344/port-scan" class="text-blue-400 underline mt-2 block">View on GitHub</a>
+      </div>
+    </div>
+    <div class="text-center mt-10">
+      <a href="#tools" class="px-6 py-3 bg-blue-500 rounded-xl hover:bg-blue-600">⬅ Back</a>
+    </div>
+  </section>
+
+  <!-- Frameworks Placeholder -->
+  <section id="frameworks" class="py-20 px-10 bg-gray-950">
+    <h3 class="text-3xl text-center text-yellow-400 mb-10">Framework Tools</h3>
+    <p class="text-center">No tools added yet.</p>
+    <div class="text-center mt-10">
+      <a href="#tools" class="px-6 py-3 bg-blue-500 rounded-xl hover:bg-blue-600">⬅ Back</a>
+    </div>
+  </section>
+
+  <!-- Malware Lab Placeholder -->
+  <section id="malwarelab" class="py-20 px-10 bg-gray-950">
+    <h3 class="text-3xl text-center text-red-400 mb-10">Malware Lab</h3>
+    <p class="text-center">No tools added yet.</p>
+    <div class="text-center mt-10">
+      <a href="#tools" class="px-6 py-3 bg-blue-500 rounded-xl hover:bg-blue-600">⬅ Back</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 text-center bg-gray-950">
+    <p>© 2025 Khalid Bensaid | Follow me on GitHub & LinkedIn</p>
+  </footer>
+</body>
+</html>
